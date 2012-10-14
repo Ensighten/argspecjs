@@ -23,9 +23,8 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-var argspec = {};
-
 (function() {
+    var argspec = {};
     argspec.getArgs = function(args, specs) {
       var argIdx = 0;
       var specIdx = 0;
@@ -79,5 +78,5 @@ var argspec = {};
 	    return obj.constructor.name === type;
 	  };
 	}
-    
-  }());
+  return argspec;    
+}());
